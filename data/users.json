@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Ahmed",
+    "role": "Backend Developer",
+    "email": "rahim@example.com",
+    "bio": "Works on APIs and server-side development."
+  },
+  {
+    "id": 2,
+    "name": "Karim Hasan",
+    "role": "Frontend Developer",
+    "email": "karim@example.com",
+    "bio": "Builds responsive user interfaces."
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "role": "UI Designer",
+    "email": "nusrat@example.com",
+    "bio": "Creates clean and user-friendly designs."
+  }
+]
