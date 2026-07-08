@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #eef2f7;
+  color: #102a43;
+}
+
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.back-link {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #334e68;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(16, 42, 67, 0.08);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.profile-container {
+  width: min(100%, 520px);
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(16, 42, 67, 0.08);
+  display: grid;
+  gap: 24px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb 0%, #0f5adb 100%);
+  margin: 0 auto;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-details h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.6rem);
+  letter-spacing: -0.03em;
+}
+
+.profile-details .role {
+  margin: 12px 0 0;
+  color: #627d98;
+  font-size: 1rem;
+}
+
+.info-row,
+.bio {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.info-row {
+  display: grid;
+  gap: 8px;
+}
+
+.info-row span {
+  display: block;
+  font-size: 0.85rem;
+  color: #829ab1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.info-row a {
+  color: #1d4ed8;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.bio h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #334e68;
+}
+
+.bio p {
+  margin: 0;
+  line-height: 1.8;
+  color: #486581;
+}
+
+.message {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(16, 42, 67, 0.07);
+}
+
+.message h2 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+}
+
+.message p {
+  margin: 0;
+  color: #627d98;
+}
+
+.message.error {
+  border-color: #f1b0b7;
+  background: #fff1f3;
+  color: #9f1239;
+}
+
+.loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  color: #334e68;
+  font-size: 1rem;
+}
