@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="dashboard-body">
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/index.html" class="badge-mark">TD</a>
+      <span class="topbar-label">TEAM&nbsp;DASHBOARD</span>
+      <a href="/index.html" class="topbar-back">← Landing</a>
+    </div>
+  </header>
+
+  <main class="dash-main">
+    <div class="dash-heading-row">
+      <div>
+        <p class="eyebrow">DIRECTORY</p>
+        <h1 class="dash-title">Team Dashboard</h1>
+      </div>
+      <div class="dash-count">
+        <span id="user-count">0</span>
+        <span class="dash-count-label">members</span>
+      </div>
+    </div>
+
+    <div class="search-row">
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search by name…"
+          autocomplete="off"
+        >
+      </div>
+    </div>
+
+    <div id="user-list" class="user-grid" aria-live="polite">
+      <!-- Cards injected by js/main.js -->
+    </div>
+
+    <p id="empty-state" class="empty-state" hidden>
+      No members match “<span id="empty-query"></span>”. Try a different name.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <span>Team Dashboard</span>
+    <span class="footer-dim">Landing · Dashboard · Profiles</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
